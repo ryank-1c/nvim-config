@@ -15,4 +15,8 @@ map("n", "<M-Right>", "w",      { desc = "Jump word right" })
 map("i", "<M-Left>",  "<C-o>b", { desc = "Jump word left" })
 map("i", "<M-Right>", "<C-o>w", { desc = "Jump word right" })
 
+map("n", "<leader>tt", function()
+  require("base46").toggle_transparency()
+end, { desc = "toggle transparency" })
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
