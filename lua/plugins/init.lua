@@ -13,6 +13,18 @@ return {
     end,
   },
 
+  {
+    "kdheepak/lazygit.nvim",
+    cmd = {
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile",
+    },
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
